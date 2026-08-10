@@ -122,33 +122,79 @@ select {
    BOTÓN
 ========================= */
 
+
+/* =========================
+   BOTONES
+========================= */
+
+.buttons {
+    display: flex;
+
+    gap: 12px;
+}
+
+
+/* Estilos generales de los botones */
+
 button {
     padding: 10px 20px;
 
-    border: none;
-
     border-radius: 6px;
-
-    background-color: #222;
-
-    color: white;
 
     font-size: 1rem;
 
     font-weight: bold;
 
     cursor: pointer;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
 }
 
 
-button:hover {
+/* =========================
+   BOTÓN PRINCIPAL
+========================= */
+
+.primary-btn {
+    background-color: #222;
+
+    color: white;
+
+    border: 2px solid #222;
+}
+
+
+.primary-btn:hover {
     background-color: #444;
+
+    border-color: #444;
 }
 
 
-/* Foco visible para accesibilidad */
-button:focus-visible,
-select:focus-visible {
+/* =========================
+   BOTÓN SECUNDARIO
+========================= */
+
+.secondary-btn {
+    background-color: white;
+
+    color: #222;
+
+    border: 2px solid #222;
+}
+
+
+.secondary-btn:hover {
+    background-color: #eeeeee;
+}
+
+
+/* =========================
+   FOCO
+========================= */
+
+button:focus-visible {
     outline: 3px solid #4c9ffe;
 
     outline-offset: 3px;
@@ -228,4 +274,37 @@ select:focus-visible {
     background-color: #222;
 
     color: white;
+}
+
+/* =========================
+   TOAST
+========================= */
+
+.toast {
+    position: fixed;
+
+    bottom: 30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #222;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: opacity 0.3s ease;
+}
+
+
+.toast.show {
+    opacity: 1;
 }
