@@ -261,6 +261,32 @@ button:focus-visible {
     font-weight: bold;
 }
 
+.color-card.new-color {
+    animation: aparecerColor 0.5s ease-out;
+}
+
+@keyframes aparecerColor {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.color-card {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.color-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
 
 /* =========================
    FOOTER
