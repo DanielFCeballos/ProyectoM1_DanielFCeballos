@@ -51,6 +51,7 @@ Para publicar el proyecto utilicé GitHub Pages desde el repositorio de GitHub.
 
 La aplicación se encuentra disponible en:
 
-[FALTA CARGAR LINK OFICIAL]
+[Colorfly Studio](https://danielfceballos.github.io/ProyectoM1_DanielFCeballos/)
+
 
 La rama utilizada para la publicación es main.
