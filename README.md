@@ -55,3 +55,9 @@ La aplicación se encuentra disponible en:
 
 
 La rama utilizada para la publicación es main.
+
+## Documentación y evidencias
+
+Puedes consultar todas las capturas de documentación del uso de IA y paso a paso en la siguiente carpeta 
+
+[📁 Ver documentación en Google Drive](https://drive.google.com/drive/folders/1yC6o9WDfbU1KW8dqmJUHb05uSFkMx2Bw?usp=drive_link)
